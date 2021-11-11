@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DishdetailComponent from "./DishdetailComponent";
+import Dishdetail from "./DishdetailComponent";
 import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 class Menu extends Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class Menu extends Component {
 
   renderDish(dish) {
     if (dish != null) {
-      return <DishdetailComponent dishes={this.state.selectedDish} />;
+      return <Dishdetail dishes={this.state.selectedDish} />;
     } else {
       return <div></div>;
     }
